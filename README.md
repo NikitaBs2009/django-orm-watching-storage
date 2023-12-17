@@ -19,6 +19,11 @@ pip install -r requirements.txt
 SECRET_KEY = 'secret_key'
 PASSWORD = 'password'
 DEBUG = True
+ENGINE = 'DB_ENGINE'
+HOST = 'DB_HOST'
+PORT = 'DB_PORT'
+NAME = 'DB_NAME'
+USER = 'DB_USER'
 ```
 ### Цель проекта
 
