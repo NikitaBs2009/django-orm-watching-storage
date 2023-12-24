@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 from django.utils.timezone import localtime
 from django.shortcuts import get_object_or_404
-from security_info_helper import get_duration, format_duration, is_visit_long
+from datacenter.security_info_helper import get_duration, format_duration, is_visit_long
 
 
 def passcard_info_view(request, passcode):

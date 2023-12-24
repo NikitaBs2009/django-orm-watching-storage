@@ -1,20 +1,16 @@
 import os
 from dotenv import load_dotenv
 load_dotenv()
-PASSWORD = os.environ['DB_PASSWORD']
-ENGINE =  os.environ['DB_ENGINE']
-HOST = os.environ['DB_HOST']
-PORT = os.environ['DB_PORT']
-NAME = os.environ['DB_NAME']
-USER = os.environ['DB_USER']
+
+
 DATABASES = {
     'default': {
-        'ENGINE': ENGINE,
-        'HOST': HOST,
-        'PORT': PORT,
-        'NAME': NAME,
-        'USER': USER,
-        'PASSWORD': PASSWORD,
+        'ENGINE': os.environ['DB_ENGINE'],
+        'HOST': os.environ['DB_HOST'],
+        'PORT': os.environ['DB_PORT'],
+        'NAME': os.environ['DB_NAME'],
+        'USER': os.environ['DB_USER'],
+        'PASSWORD': os.environ['DB_PASSWORD'],
     }
 }
 
