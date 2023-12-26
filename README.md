@@ -24,6 +24,7 @@ HOST = 'DB_HOST'
 PORT = 'DB_PORT'
 NAME = 'DB_NAME'
 USER = 'DB_USER'
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 ```
 ### Цель проекта
 
